@@ -34,8 +34,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:2.26.12"
       ],
       [
-        "dot-env",
-        "npm:0.0.1"
+        "chalk",
+        "npm:4.1.0"
+      ],
+      [
+        "dotenv",
+        "npm:8.2.0"
       ],
       [
         "express",
@@ -66,7 +70,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["browser-sync", "npm:2.26.12"],
-            ["dot-env", "npm:0.0.1"],
+            ["chalk", "npm:4.1.0"],
+            ["dotenv", "npm:8.2.0"],
             ["express", "npm:4.17.1"],
             ["jsonwebtoken", "npm:8.5.1"],
             ["mongoose", "npm:5.10.4"],
@@ -770,6 +775,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supports-color", "npm:7.2.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/chalk-npm-4.1.0-c746e252ba-f860285b41.zip/node_modules/chalk/",
+          "packageDependencies": [
+            ["chalk", "npm:4.1.0"],
+            ["ansi-styles", "npm:4.2.1"],
+            ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["character-parser", [
@@ -1242,21 +1256,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["dot-env", [
-        ["npm:0.0.1", {
-          "packageLocation": "./.yarn/cache/dot-env-npm-0.0.1-e05d86b07b-035189edd9.zip/node_modules/dot-env/",
-          "packageDependencies": [
-            ["dot-env", "npm:0.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["dot-prop", [
         ["npm:5.3.0", {
           "packageLocation": "./.yarn/cache/dot-prop-npm-5.3.0-7bf6ee1eb8-76e6693d88.zip/node_modules/dot-prop/",
           "packageDependencies": [
             ["dot-prop", "npm:5.3.0"],
             ["is-obj", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dotenv", [
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.2.0-6b21df4d37-16cb89cbd7.zip/node_modules/dotenv/",
+          "packageDependencies": [
+            ["dotenv", "npm:8.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -3938,7 +3952,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["simple-todo-node-app", "workspace:."],
             ["browser-sync", "npm:2.26.12"],
-            ["dot-env", "npm:0.0.1"],
+            ["chalk", "npm:4.1.0"],
+            ["dotenv", "npm:8.2.0"],
             ["express", "npm:4.17.1"],
             ["jsonwebtoken", "npm:8.5.1"],
             ["mongoose", "npm:5.10.4"],

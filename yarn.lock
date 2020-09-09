@@ -610,6 +610,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "chalk@npm:4.1.0"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: f860285b419f9e925c2db0f45ffa88aa8794c14b80cc5d01ff30930bcfc384996606362706f0829cf557f6d36152a5fb2d227ad63c4bc90e2ec9e9dbed4a3c07
+  languageName: node
+  linkType: hard
+
 "character-parser@npm:^2.2.0":
   version: 2.2.0
   resolution: "character-parser@npm:2.2.0"
@@ -1007,19 +1017,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dot-env@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "dot-env@npm:0.0.1"
-  checksum: 035189edd9f93af583ff769ce08de935c30636839ab387e880796905432a25d85c40f97323889f305a3fb7734478d10b53fd85c127a37abb3b6963df75a46c7b
-  languageName: node
-  linkType: hard
-
 "dot-prop@npm:^5.2.0":
   version: 5.3.0
   resolution: "dot-prop@npm:5.3.0"
   dependencies:
     is-obj: ^2.0.0
   checksum: 76e6693d8803eeff9cb920988446bf223cf1f6e5b1c0c2fe07a66906392134931a481b11e3c0bd852c5cfc97fad65258bcb4359169ad1d8d624cb3f56932be98
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "dotenv@npm:8.2.0"
+  checksum: 16cb89cbd7b98b053899b8aba8c5044c8fb61a2db8a81fe70360b75035fce5fed53bd7a34d772be717d0880c0321122a4c09423f518025e1b52d96791521b1a7
   languageName: node
   linkType: hard
 
@@ -3410,7 +3420,8 @@ resolve@^1.15.1:
   resolution: "simple-todo-node-app@workspace:."
   dependencies:
     browser-sync: ^2.26.12
-    dot-env: ^0.0.1
+    chalk: ^4.1.0
+    dotenv: ^8.2.0
     express: ^4.17.1
     jsonwebtoken: ^8.5.1
     mongoose: ^5.10.4
