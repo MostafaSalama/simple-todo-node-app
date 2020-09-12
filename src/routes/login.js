@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 	res.render('login', { title: 'Login To Your Account' });
 });
 router.post('/', (req, res) => {
-	console.log(req.body);
+	const {username,password}  = req.body ;
 	res.redirect('/login');
 });
 module.exports = router;
