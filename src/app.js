@@ -16,4 +16,11 @@ app.use('/api',apiRouter) ;
 app.get('/',(req,res)=>{
     res.render('index',{title:"Welcome To MY APP"})
 })
+app.use(function (req,res,next) {
+    res.statusCode = 404;
+    next() ;
+})
+app.use(function (req,res) {
+    res.json({message:"Can't find the required module"})
+})
 module.exports = app  ;
